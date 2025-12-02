@@ -1,6 +1,7 @@
-SSUI Skylines
 
-SSUI Skylines is an interactive city planning simulation built with React and TypeScript. This application allows users to design a city layout by placing various types of buildings, drawing road networks, and calculating the shortest paths between locations using Dijkstra's algorithm. The visualization is handled via the HTML5 Canvas API for high-performance rendering.
+#SSUI Skylines
+
+SSUI Skylines is an simple interactive city builder program built with React and TypeScript, based on the popular game Cities Skylines of the same premise. This application allows users to design a city layout by placing various types of buildings, drawing road networks, and calculating the shortest paths between locations using Dijkstra's algorithm. The visualization is handled via the HTML5 Canvas API for high-performance rendering.
 
 🚀 Features
 
