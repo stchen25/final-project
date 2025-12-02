@@ -1,46 +1,134 @@
-# Getting Started with Create React App
+SSUI Skylines
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SSUI Skylines is an interactive city planning simulation built with React and TypeScript. This application allows users to design a city layout by placing various types of buildings, drawing road networks, and calculating the shortest paths between locations using Dijkstra's algorithm. The visualization is handled via the HTML5 Canvas API for high-performance rendering.
 
-## Available Scripts
+🚀 Features
+
+Building Placement: Select from multiple categories (Residential, Commercial, Academic, Services) and place specific building variants on the map.
+
+Road Construction: Intuitive drag-and-drop road creation with automatic snapping to existing road endpoints for seamless connections.
+
+Pathfinding Visualization: A "Path" tool that calculates and visualizes the shortest route between two points on your road network using Dijkstra's algorithm.
+
+Dynamic Rendering: Real-time canvas rendering for smooth interaction.
+
+Modern UI: Clean sidebar interface built with Tailwind CSS and Lucide icons.
+
+📋 Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+Node.js: (Version 14.0.0 or higher recommended)
+
+npm: (Usually comes installed with Node.js)
+
+🛠 Installation & Setup
+
+Follow these steps to get the project running locally:
+
+Unzip/Clone the Project
+Navigate to the project directory in your terminal:
+
+cd final-project
+
+
+Install Dependencies
+Run the following command to install all required libraries (React, TypeScript, Tailwind, etc.) listed in package.json:
+
+npm install
+
+
+Run the Application
+Start the development server:
+
+npm start
+
+
+View in Browser
+The application should automatically open in your default browser. If not, navigate to:
+
+http://localhost:3000
+
+
+🎮 How to Use
+
+The application interface is divided into a sidebar (left) and the map canvas (right).
+
+1. Placing Buildings
+
+Hover over a category in the Buildings section of the sidebar (e.g., Residential, Commercial).
+
+A menu will expand showing specific building variants (e.g., Cottage, Apartment, Hospital).
+
+Click on a building variant.
+
+Move your mouse to the canvas (a ghost image of the building will follow your cursor).
+
+Click to place the building.
+
+2. Drawing Roads
+
+Click the Road button in the Tools section.
+
+Click and hold (drag) on the canvas to start drawing a road segment.
+
+Release the mouse button to finish the segment.
+
+Tip: The tool automatically snaps to the ends of existing roads (indicated by a blue circle) to help you connect segments.
+
+Tip: A distance label is displayed while drawing to show the length of the road segment.
+
+3. Finding Paths
+
+Click the Path button in the Tools section.
+
+Click once near a building or road to set the Start Point (marked by a red pin).
+
+Click a second time at a different location to set the End Point.
+
+The application will calculate and highlight the shortest path in yellow.
+
+Note: Buildings must be close enough to a road (approx. 100px) to effectively "connect" to the road network.
+
+4. General Controls
+
+Clear Map: Click the "Clear Map" button in the sidebar to remove all buildings and roads.
+
+Escape Key: Press Esc on your keyboard to cancel the current tool (stop placing a building or cancel a road/path action).
+
+🏗 Project Structure
+
+src/components/SSUISkylines.tsx: The main application component containing the UI logic and state management.
+
+src/lib/cityConfig.tsx: Configuration file defining available buildings, their dimensions, and colors.
+
+src/lib/canvasRenderer.ts: Contains functions responsible for drawing roads, buildings, and guides on the HTML5 Canvas.
+
+src/lib/pathFinding.ts: Implementation of Dijkstra's algorithm for calculating shortest paths on the road graph.
+
+src/lib/types.ts: TypeScript interfaces defining the shape of data (Points, Buildings, Roads, etc.).
+
+🔧 Technologies Used
+
+React 19
+
+TypeScript
+
+Tailwind CSS (Styling)
+
+Lucide React (Icons)
+
+HTML5 Canvas API
+
+📝 Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+npm start: Runs the app in development mode.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm run build: Builds the app for production to the build folder.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
+npm test: Launches the test runner.
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
