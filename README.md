@@ -2,6 +2,8 @@
 
 A React-based simple 2D city planning application that allows users to create custom city layouts with buildings, roads, and pathfinding capabilities. It is based on the popular game Cities Skylines, of the same premise
 
+This code is publicly available on Github: https://github.com/stchen25/final-project
+
 ## Project Overview
 
 SSUI Skylines is an interactive canvas application where users can:
