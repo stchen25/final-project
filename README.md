@@ -1,6 +1,6 @@
 # SSUI Skylines
 
-A React-based city planning application that allows users to create custom city layouts with buildings, roads, and pathfinding capabilities.
+A React-based simple 2D city planning application that allows users to create custom city layouts with buildings, roads, and pathfinding capabilities. It is based on the popular game Cities Skylines, of the same premise
 
 ## Project Overview
 
@@ -179,18 +179,12 @@ If you see TypeScript compilation errors:
 ## Browser Compatibility
 
 This application works best in modern browsers:
-- Chrome (recommended)
+- Chrome
 - Firefox
 - Safari
 - Edge
 
-## License
 
-This is an educational project for the SSUI (Software Structures for User Interfaces) course.
-
-## Author
-
-Stephen Chen
 
 ---
 
